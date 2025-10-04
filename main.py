@@ -1,49 +1,43 @@
 import streamlit as st
 
 # ----- PAGE SETUP -----
-st.set_page_config(page_title="My Resume", page_icon="📄", layout="wide")
+st.set_page_config(page_title="My Resume", page_icon="📄", layout="centered")
 
 # ----- CUSTOM CSS -----
 st.markdown(
     """
     <style>
-    /* General page style */
     body {
-        background-color: #f9f9f9;
         font-family: 'Segoe UI', sans-serif;
+        color: #2c3e50;
+        background-color: #f7f9fc;
     }
-    /* Header styling */
-    .main-title {
-        font-size: 2.5em;
+    .section-title {
+        font-size: 1.5em;
         font-weight: bold;
-        color: #2E86C1;
+        color: #1a5276;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
-    .subtitle {
-        font-size: 1.2em;
-        color: #555;
-    }
-    /* Card style */
     .card {
         background-color: #ffffff;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
-        margin-bottom: 20px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        border-left: 4px solid #1a5276;
+        margin-bottom: 15px;
     }
-    /* Footer */
     .footer {
         text-align: center;
         color: grey;
-        font-size: 0.9em;
-        padding: 15px;
+        font-size: 0.85em;
+        margin-top: 30px;
     }
     a {
         text-decoration: none;
-        color: black;
+        color: #1a5276;
     }
     a:hover {
-        color: black;
-        font-weight: bold;
+        color: #0e6655;
     }
     </style>
     """,
@@ -54,18 +48,18 @@ st.markdown(
 col1, col2 = st.columns([1, 3])
 
 with col1:
-    st.image("https://via.placeholder.com/150", caption="", use_container_width=True)
+    st.image("https://via.placeholder.com/150", use_container_width=True)
 
 with col2:
-    st.markdown("<div class='main-title'>Your Full Name</div>", unsafe_allow_html=True)
-    st.markdown("<div class='subtitle'>📍 City, Country</div>", unsafe_allow_html=True)
+    st.markdown("## Your Full Name")
+    st.write("📍 City, Country")
     st.write("✉ your.email@example.com | 📞 +6012-3456789")
     st.write("🔗 [LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)")
 
 st.markdown("---")
 
 # ----- EDUCATION -----
-st.markdown("### 🎓 Education")
+st.markdown("<div class='section-title'>🎓 Education</div>", unsafe_allow_html=True)
 st.markdown(
     """
     <div class="card">
@@ -73,31 +67,29 @@ st.markdown(
         - Major in Artificial Intelligence<br>
         - Dean’s List Award (2021, 2022)
     </div>
-    """,
-    unsafe_allow_html=True
+    """, unsafe_allow_html=True
 )
 
 # ----- EXPERIENCE -----
-st.markdown("### 💼 Work Experience")
+st.markdown("<div class='section-title'>💼 Work Experience</div>", unsafe_allow_html=True)
 st.markdown(
     """
     <div class="card">
         <b>Software Intern</b>, Tech Company (Jun 2023 – Aug 2023)<br>
         - Developed internal dashboard using Python and Streamlit<br>
         - Automated data processing tasks (reduced manual work by 40%)<br>
-        - Collaborated with the data team to deploy ML models
+        - Collaborated with data team to deploy ML models
     </div>
     <div class="card">
         <b>Freelance Web Developer</b> (2022 – Present)<br>
-        - Built personal and business websites using HTML, CSS, and JavaScript<br>
-        - Customized WordPress themes and improved SEO performance
+        - Built websites using HTML, CSS, JavaScript<br>
+        - Customized WordPress themes & improved SEO
     </div>
-    """,
-    unsafe_allow_html=True
+    """, unsafe_allow_html=True
 )
 
 # ----- SKILLS -----
-st.markdown("### 🧠 Skills")
+st.markdown("<div class='section-title'>🧠 Skills</div>", unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 with col1:
     st.markdown(
@@ -119,21 +111,20 @@ with col2:
         """, unsafe_allow_html=True)
 
 # ----- PROJECTS -----
-st.markdown("### 🚀 Projects & Achievements")
+st.markdown("<div class='section-title'>🚀 Projects & Achievements</div>", unsafe_allow_html=True)
 st.markdown(
     """
     <div class="card">
         <b>Water Leakage Detection IoT System</b><br>
         - Designed IoT system using ESP8266 for real-time detection<br>
-        - Integrated with a mobile app for instant notifications
+        - Integrated with mobile app for instant notifications
     </div>
     <div class="card">
         <b>Twitter Hate Speech Detection</b><br>
-        - Adapted a Transformer model to detect hate speech using PyTorch<br>
+        - Adapted Transformer model using PyTorch<br>
         - Achieved 90% accuracy on test data
     </div>
-    """,
-    unsafe_allow_html=True
+    """, unsafe_allow_html=True
 )
 
 # ----- FOOTER -----
