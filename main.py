@@ -7,16 +7,16 @@ st.set_page_config(page_title="My Resume", page_icon="📄", layout="centered")
 col1, col2 = st.columns([1, 3], gap="large")
 
 with col1:
-    st.image("foto_pp.jpeg", caption="Betran Ramadhan P", use_container_width=True)  
+    st.image("foto_pp.jpeg", caption="Betran Ramadhan Prasetyo", use_container_width=True)  
 
 with col2:
     st.subheader("📄 Resume")
-    st.title("Your Full Name")
+    st.title("BETRAN RAMADHAN PRASETYO")
     st.markdown("""
-    - 📍 Location: City, Country  
-    - ✉ Email: your.email@example.com  
-    - 📞 Phone: +6012-3456789  
-    - 🔗 [LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)  
+    - 📍 JATIASIH: KOTA BEKASI, INDONESIA 
+    - ✉ Email: betranwork@gmail.com  
+    - 📞 Phone: +62895327717859  
+    - 🔗 [LinkedIn](https://linkedin.com/in/) | [GitHub](https://github.com/Vetgt)  
     """)
 
 st.divider()
@@ -24,9 +24,8 @@ st.divider()
 # ----- EDUCATION -----
 st.header("🎓 Education")
 st.markdown("""
-**Bachelor of Computer Science**, University Name (2020 – 2024)  
+**Bachelor of AI**, University Malaysia Kelantan (2025-2026)  
 - Major in Artificial Intelligence  
-- Dean’s List Award (2021, 2022)  
 """)
 
 st.divider()
@@ -34,14 +33,14 @@ st.divider()
 # ----- WORK EXPERIENCE -----
 st.header("💼 Work Experience")
 st.markdown("""
-**Software Intern**, Tech Company (Jun 2023 – Aug 2023)  
-- Developed internal dashboard using Python and Streamlit  
-- Automated data processing tasks, reducing manual work by 40%  
+**Software Developer**,(Feb 2025 – June 2025)  
+- Developed internal dashboard using flutter and python with firebase database
+- Automated data processing tasks, reducing manual work by 50%  
 - Collaborated with the data team to deploy ML models  
 
-**Freelance Web Developer** (2022 – Present)  
-- Built personal and business websites using HTML, CSS, and JavaScript  
-- Customized WordPress themes and improved SEO performance  
+**Design 3d Using Blender** (2021 – 2022)  
+- Built 3d animation 
+- Consult Design Model 3d
 """)
 
 st.divider()
@@ -54,14 +53,18 @@ with colA:
     st.markdown("""
     - Python  
     - HTML / CSS / JavaScript  
-    - Streamlit  
+    - Streamlit
+    - Java
+    - Flask
     """)
 
 with colB:
     st.markdown("""
     - Machine Learning  
     - SQL  
-    - Git & GitHub  
+    - Git & GitHub
+    - Flutter
+    - Deep learning
     """)
 
 st.divider()
@@ -69,13 +72,13 @@ st.divider()
 # ----- PROJECTS -----
 st.header("🚀 Projects & Achievements")
 st.markdown("""
-**Water Leakage Detection IoT System**  
-- Designed an IoT-based system using ESP8266 to detect water leakage in real time  
+**AUTOMATED SMART SPRINK WATER**  
+- Designed an IoT-based system using ESP32 to detect soil and automation spring real time  
 - Integrated with a mobile app for instant notifications  
 
-**Twitter Hate Speech Detection**  
-- Adapted a Transformer model to detect hate speech using PyTorch  
-- Achieved 90% accuracy on test data  
+**Twitter emotion  Detection**  
+- Adapted a Transformer model to detect emotion comment using PyTorch  
+- Achieved 93% accuracy on test data  
 """)
 
 st.divider()
