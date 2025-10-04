@@ -39,10 +39,10 @@ st.markdown(
     }
     a {
         text-decoration: none;
-        color: #1A5276;
+        color: black;
     }
     a:hover {
-        color: #117864;
+        color: black;
         font-weight: bold;
     }
     </style>
