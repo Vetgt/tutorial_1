@@ -7,7 +7,7 @@ st.set_page_config(page_title="My Resume", page_icon="📄", layout="centered")
 col1, col2 = st.columns([1, 3], gap="large")
 
 with col1:
-    st.image("FOTO (3) (1).jpeg/150", caption="Betran Ramadhan P", use_container_width=True)  
+    st.image("foto_pp.jpeg", caption="Betran Ramadhan P", use_container_width=True)  
 
 with col2:
     st.subheader("📄 Resume")
